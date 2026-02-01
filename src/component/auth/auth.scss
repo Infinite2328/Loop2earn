@@ -1,0 +1,53 @@
+.login {
+  width: 100vw;
+  height: auto;
+  background-color: #F9F8F4 !important;
+  display: block;
+  .logo {
+    height: 900px;
+    width: 680px;
+    // position: absolute;
+    img {
+      position: absolute;
+      top: 258px;
+      left: 148px;
+    }
+  }
+  .navbar {
+    position: absolute;
+    padding: 40px 124px 40px 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 103px;
+    // z-index: 99;
+    width: 100%;
+    box-sizing: border-box;
+
+    .display {
+      display: flex;
+      gap: 14px;
+      width:288px;
+      height:60px;
+      .login-b {
+        width: 107px;
+        height: 60px;
+        border-radius: 10px;
+        cursor: pointer;
+        .pad {
+          padding-top: 19px;
+        }
+      }
+      .sign-b {
+        width: 167px;
+        height: 60px;
+        border-radius: 10px;
+        cursor: pointer;
+        .pad {
+          padding-top: 19px;
+        }
+        background: linear-gradient(to bottom right, #DD5690, #FDB95F);
+      }
+    }
+  }
+}
