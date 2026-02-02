@@ -6,13 +6,106 @@
   .logo {
     height: 900px;
     width: 680px;
-    // position: absolute;
     img {
       position: absolute;
       top: 258px;
       left: 148px;
     }
   }
+
+  .greeting {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    width: 286px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 10%;
+    color: #372A2A;
+    top: 181px;
+    left: 881px;
+    position: absolute;
+  }
+  
+  .description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #654657;
+    letter-spacing: 0%;
+    top: 238px;
+    left: 835px;
+    position: absolute;
+    width: 379px;
+    height: 52px;
+  }
+
+  .input-section {
+    position: absolute;
+    width: 376px;
+    height: 144px;
+    top: 330px;
+    left: 838px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    .username-input {
+      width: 100%;
+      height: 60px;
+      padding: 8px 20px;
+      border: 1px solid #F8E6D9;
+      border-radius: 10px;
+      display: flex;
+      gap: 12px;
+      box-sizing: border-box;
+      .icon {
+        width: 33px;
+        height: 100%;
+        display: flex;
+        padding-top: 10px;
+        box-sizing:border-box;
+        border-right: 1px solid #F8E6D9;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+    .password-input {
+      width: 100%;
+      height: 60px;
+      padding: 8px 20px;
+      border: 1px solid #F8E6D9;
+      border-radius: 10px;
+      display: flex;
+      gap: 12px;
+      box-sizing: border-box;
+      .icon {
+        width: 33px;
+        height: 100%;
+        display: flex;
+        padding-top: 10px;
+        box-sizing:border-box;
+        border-right: 1px solid #F8E6D9;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+
+
   .navbar {
     position: absolute;
     padding: 40px 124px 40px 124px;
@@ -29,7 +122,7 @@
       gap: 14px;
       width:288px;
       height:60px;
-      .login-b {
+      .nav-login-b {
         width: 107px;
         height: 60px;
         border-radius: 10px;
@@ -38,16 +131,94 @@
           padding-top: 19px;
         }
       }
-      .sign-b {
+      .nav-sign-b {
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+        gap: 12px;
         width: 167px;
         height: 60px;
+        background: linear-gradient(113.87deg, #DD5690 14.81%, #FDB95F 88.76%);
+        box-shadow: 0px 6px 18px #F2A69C;
         border-radius: 10px;
-        cursor: pointer;
-        .pad {
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .login-b {
+    position: absolute;
+    width: 376px;
+    height: 60px;
+    top: 574px;
+    left: 838px;
+    border-radius: 10px;
+    cursor: pointer;
+    .pad {
           padding-top: 19px;
         }
-        background: linear-gradient(to bottom right, #DD5690, #FDB95F);
-      }
+    background: linear-gradient(to bottom right, #DD5690, #FDB95F);
+    color: white;
+  }
+
+  .forgot-pass-b {
+    cursor: pointer;
+    background: linear-gradient(113.87deg, rgba(221, 86, 144, 0.1) 14.81%, rgba(252, 181, 97, 0.1) 88.76%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    gap: 12px;
+
+    position: absolute;
+    width: 376px;
+    height: 46px;
+    left: 838px;
+    top: 654px;
+
+    background: linear-gradient(113.87deg, rgba(221, 86, 144, 0.1) 14.81%, rgba(252, 181, 97, 0.1) 88.76%);
+    border-radius: 10px;
+  }
+
+  .utils-link {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 242px;
+    height: 67px;
+    left: 905px;
+    top: 755px;
+    .utils-sites {
+      box-sizing: border-box;
+      /* Auto layout */
+      display: flex;
+      color: white;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 16px;
+      gap: 10px;
+      width: 66px;
+      height: 67px;
+      background: linear-gradient(90.63deg, rgba(239, 60, 137, 0.78) 9.11%, rgba(249, 185, 63, 0.78) 90.16%);
+      box-shadow: 0px 2px 4px rgba(86, 53, 43, 0.25);
+      border-radius: 38px;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
     }
   }
 }

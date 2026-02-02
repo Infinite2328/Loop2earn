@@ -7,8 +7,8 @@ function Navbar() {
       <div className="navbar">
         <img src={Loop} alt="Loop Logo" />
         <div className="display">
-          <Button className="login-b" label="Login" />
-          <Button className="sign-b" label="Sign Up" />
+          <Button className="nav-login-b" label="Login" />
+          <Button className="nav-sign-b" label="Sign Up" />
         </div>
       </div>
     </>

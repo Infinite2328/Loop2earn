@@ -4,6 +4,8 @@ const log_const = {
   UserLabel: 'Username or Email',
   PassLabel: 'Password',
   ForgotPass: 'Forgot Password?',
-  LoginButton: 'Log In'
+  LoginButton: 'Log In',
+  Login: 'Log In',
+  ForgotPass: 'I forgot my password'
 };
 export default log_const;
