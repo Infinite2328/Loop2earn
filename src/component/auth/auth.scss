@@ -11,6 +11,13 @@
       top: 258px;
       left: 148px;
     }
+    /* Rectangle 5986 */
+    position: absolute;
+    width: 680px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(181.71deg, rgba(246, 232, 234, 0.24) -5%, rgba(249, 240, 230, 0.24) 37.12%, rgba(244, 158, 109, 0.24) 143.7%);
   }
 
   .greeting {
@@ -149,6 +156,7 @@
         order: 1;
         flex-grow: 0;
         box-sizing: border-box;
+        cursor: pointer;
       }
     }
   }
@@ -219,6 +227,7 @@
       flex: none;
       order: 0;
       flex-grow: 0;
+      cursor: pointer;
     }
   }
 }
